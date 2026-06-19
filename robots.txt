@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bradget.github.io/officialmain-leyu-com-cn/sitemap.xml

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>乐鱼体育 · 简明访问指南</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f8f6f0;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', Helvetica, Arial, sans-serif;
+      color: #2c2b28;
+      line-height: 1.7;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page {
+      max-width: 820px;
+      width: 100%;
+      background: #fdfcf9;
+      border-radius: 32px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.02);
+      padding: 2.8rem 2.4rem;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 1rem 0.75rem; }
+      .page { padding: 2rem 1.2rem; border-radius: 24px; }
+    }
+
+    /* 主视觉 */
+    .hero {
+      margin-bottom: 2.8rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #eae6de;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #eae3d4;
+      color: #544e42;
+      font-size: 0.8rem;
+      letter-spacing: 0.3px;
+      padding: 0.25rem 1rem;
+      border-radius: 40px;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 550;
+      letter-spacing: -0.02em;
+      color: #1f1e1a;
+      line-height: 1.2;
+      margin-top: 0.3rem;
+    }
+
+    .subhead {
+      font-size: 1.1rem;
+      color: #5f5a50;
+      margin-top: 0.8rem;
+      max-width: 600px;
+    }
+
+    /* 信息卡片容器 */
+    .card-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+      margin: 2.4rem 0 2.8rem 0;
+    }
+
+    .card {
+      background: #f5f2eb;
+      border-radius: 24px;
+      padding: 1.6rem 1.8rem;
+      transition: background 0.2s ease;
+    }
+
+    .card-title {
+      font-weight: 560;
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .card-title::before {
+      content: "▹";
+      color: #a3947c;
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    .card p {
+      margin-top: 0.25rem;
+      color: #3c3a34;
+    }
+
+    .card ul {
+      list-style: none;
+      margin-top: 0.6rem;
+    }
+
+    .card ul li {
+      padding: 0.2rem 0 0.2rem 1.3rem;
+      position: relative;
+    }
+
+    .card ul li::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: #9a8b75;
+    }
+
+    /* 引用块 / 提示框 */
+    .callout {
+      background: #ece7dd;
+      border-left: 5px solid #b7a78c;
+      border-radius: 16px;
+      padding: 1.4rem 1.8rem;
+      margin: 2.2rem 0;
+      color: #3b372f;
+      font-size: 0.96rem;
+    }
+
+    .callout strong {
+      color: #2d281f;
+    }
+
+    /* 自然链接段落 */
+    .link-paragraph {
+      background: #faf8f4;
+      border: 1px solid #e6dfd2;
+      border-radius: 20px;
+      padding: 1.6rem 1.8rem;
+      margin-top: 2rem;
+      font-size: 1rem;
+    }
+
+    .link-paragraph a {
+      color: #7a6b54;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      text-decoration-color: #c2b49b;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .link-paragraph a:hover {
+      color: #4f4432;
+      text-decoration-color: #7a6b54;
+    }
+
+    /* FAQ 摘要 */
+    .faq-mini {
+      margin: 2.4rem 0 0.8rem 0;
+      border-top: 1px solid #e8e2d6;
+      padding-top: 2rem;
+    }
+
+    .faq-item {
+      padding: 0.7rem 0;
+      border-bottom: 1px dashed #e3dbcd;
+    }
+
+    .faq-q {
+      font-weight: 560;
+      color: #3b372f;
+    }
+
+    .faq-a {
+      color: #5a554a;
+      padding-top: 0.25rem;
+      font-size: 0.95rem;
+    }
+
+    .note {
+      font-size: 0.85rem;
+      color: #7b7569;
+      margin-top: 2rem;
+      text-align: center;
+      border-top: 1px solid #eae3d6;
+      padding-top: 1.6rem;
+    }
+
+    /* 小装饰 */
+    .muted-meta {
+      font-size: 0.78rem;
+      color: #9b9282;
+      margin-top: 2rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e7e0d2;
+      margin: 1.8rem 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- Hero 主视觉 -->
+  <div class="hero">
+    <span class="badge">简明指南 · 温和提醒</span>
+    <h1>乐鱼体育<br>访问与使用方向</h1>
+    <p class="subhead">一份围绕信息卡片与实用提示的轻量介绍，帮助你快速了解平台特点与适用场景。</p>
+  </div>
+
+  <!-- 卡片网格：用途、适合人群、主视觉补充 -->
+  <div class="card-grid">
+
+    <div class="card">
+      <div class="card-title">用途概览</div>
+      <p>乐鱼体育聚合了多种体育项目的动态、数据与交流空间。如果你希望在一个地方浏览赛事摘要、关注队伍或选手动态，或者参与相关话题讨论，这里可以作为一个信息来源渠道。</p>
+      <ul>
+        <li>赛事信息与赛程概览</li>
+        <li>社区讨论与观点分享</li>
+        <li>基础数据查询与趋势追踪</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-title">适合哪些人</div>
+      <p>无论你是偶尔关注重大赛事的轻度爱好者，还是对特定联赛有持续兴趣的参与者，都能找到合适的内容节奏。页面设计偏向信息展示，适合以下人群：</p>
+      <ul>
+        <li>希望快速获取体育新闻摘要的浏览者</li>
+        <li>对多个项目保持好奇的多项运动观察者</li>
+        <li>喜欢在社区中阅读不同观点的讨论者</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-title">使用场景参考</div>
+      <p>上下班通勤时快速刷新赛果、午休时浏览热门讨论、周末集中查阅赛程…… 乐鱼体育适合碎片化或轻度沉浸式的信息获取，不强制长时间停留。</p>
+    </div>
+  </div>
+
+  <!-- 引用块 / 提示框 -->
+  <div class="callout">
+    <strong>📌 访问提醒</strong><br>
+    首次使用建议先浏览首页分类模块，了解信息组织方式。平台内容由用户与编辑共同贡献，请结合多方信息独立判断。如遇到加载或显示异常，可尝试刷新或更换网络环境。
+  </div>
+
+  <!-- 自然链接段落 (严格包含“乐鱼体育”可见文本) -->
+  <div class="link-paragraph">
+    <p>如果你对体育资讯与社区讨论感兴趣，可以前往 <a href="https://officialmain-leyu.com.cn">乐鱼体育</a> 了解更多当前内容。该平台以信息聚合为主，适合作为日常浏览的补充来源之一。建议根据个人兴趣筛选频道与话题，保持自主的信息摄入节奏。</p>
+  </div>
+
+  <!-- FAQ 摘要 -->
+  <div class="faq-mini">
+    <div class="faq-item">
+      <div class="faq-q">Q：是否需要注册才能浏览？</div>
+      <div class="faq-a">部分公开内容可直接查看，部分互动功能可能需要注册账号。具体以页面实际提示为准。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q：内容更新频率如何？</div>
+      <div class="faq-a">热门赛事期间更新较密集，常规时段保持每日信息流更新。建议根据个人关注的项目设置关注列表。</div>
+    </div>
+    <div class="faq-item" style="border-bottom: none;">
+      <div class="faq-q">Q：移动端适配情况？</div>
+      <div class="faq-a">页面采用响应式设计，在手机与平板设备上均可正常浏览，部分交互元素会自适应调整。</div>
+    </div>
+  </div>
+
+  <!-- 底部 note -->
+  <div class="note">
+    本文档仅作信息介绍与访问提醒，不构成任何引导或承诺。请根据自身情况合理使用。
+  </div>
+
+  <div class="muted-meta">
+    — 信息卡片·温和视角 —
+  </div>
+
+</div>
+
+</body>
+</html>
