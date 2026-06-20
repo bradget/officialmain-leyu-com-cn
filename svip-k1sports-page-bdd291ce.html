@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K1体育 · 一段关于运动与节奏的叙述</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', '宋体', serif;
+      background-color: #f8f5f0;
+      color: #2e2a24;
+      line-height: 1.8;
+      padding: 2rem 1.2rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .paper {
+      max-width: 780px;
+      width: 100%;
+      background: #fefcf8;
+      border-radius: 24px;
+      padding: 2.8rem 2.2rem;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.02);
+      border: 1px solid #ede8de;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: #2b2520;
+      margin-bottom: 0.6rem;
+      line-height: 1.2;
+      border-left: 4px solid #c7b8a2;
+      padding-left: 1rem;
+    }
+
+    .opening {
+      font-size: 1.1rem;
+      color: #4f4840;
+      margin: 1.2rem 0 1.8rem 0;
+      font-style: italic;
+      border-bottom: 1px dashed #ddd6ca;
+      padding-bottom: 1.2rem;
+    }
+
+    p {
+      margin-bottom: 1.4rem;
+      text-align: justify;
+      word-break: break-word;
+    }
+
+    .pull-quote {
+      background: #f3efe8;
+      border-left: 5px solid #b8a68e;
+      padding: 1.2rem 1.8rem;
+      margin: 1.8rem 0;
+      border-radius: 0 12px 12px 0;
+      font-size: 1.05rem;
+      color: #3f3a32;
+      font-style: normal;
+      box-shadow: inset 2px 2px 6px rgba(0,0,0,0.02);
+    }
+
+    .features {
+      margin: 2rem 0 1.5rem 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .features li {
+      position: relative;
+      padding: 0.7rem 0 0.7rem 2rem;
+      border-bottom: 1px solid #eeebe4;
+    }
+
+    .features li::before {
+      content: "·";
+      position: absolute;
+      left: 0.4rem;
+      color: #9a8979;
+      font-weight: bold;
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    .subtle-card {
+      background: #faf8f4;
+      border-radius: 18px;
+      padding: 1.6rem 1.8rem;
+      margin: 1.8rem 0;
+      border: 1px solid #e6dfd4;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    }
+
+    .subtle-card h3 {
+      font-weight: 400;
+      font-size: 1.25rem;
+      color: #3a332b;
+      margin-bottom: 0.8rem;
+      letter-spacing: 0.5px;
+    }
+
+    a {
+      color: #6d5c4b;
+      text-decoration: none;
+      border-bottom: 1px solid #d1c4b4;
+      transition: border-color 0.25s, color 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: #6d5c4b;
+      color: #3f3329;
+    }
+
+    .closing {
+      margin-top: 2.2rem;
+      padding-top: 1.4rem;
+      border-top: 1px solid #e2dacd;
+      font-size: 0.98rem;
+      color: #5f5549;
+    }
+
+    .closing strong {
+      font-weight: 400;
+      color: #2b2520;
+    }
+
+    .faq-mini {
+      margin-top: 1.6rem;
+      background: #f6f2ea;
+      padding: 1.4rem 1.6rem;
+      border-radius: 16px;
+      font-size: 0.95rem;
+    }
+
+    .faq-mini dt {
+      font-weight: 500;
+      margin-top: 0.8rem;
+      color: #3f362c;
+    }
+
+    .faq-mini dd {
+      margin-left: 0.6rem;
+      margin-bottom: 0.5rem;
+      color: #5f5549;
+      border-left: 2px solid #d6cdc0;
+      padding-left: 1rem;
+    }
+
+    .faq-mini dt:first-of-type {
+      margin-top: 0;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem 0.6rem;
+      }
+      .paper {
+        padding: 1.8rem 1.2rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+        padding-left: 0.8rem;
+      }
+      .pull-quote {
+        padding: 0.8rem 1.2rem;
+      }
+      .subtle-card {
+        padding: 1.2rem;
+      }
+      .features li {
+        padding-left: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="paper">
+
+    <h1>K1体育</h1>
+    <div class="opening">
+      有些节奏，不需要刻意寻找，它就在每一次舒展的动作里。
+    </div>
+
+    <p>
+      运动从来不只是肌肉与汗水的故事。它更像是一种无声的对话——你与身体之间，与时间之间。当一个人找到适合自己的频率，奔跑便不再是追逐，而成为某种舒展的表达。正是在这种表达的深处，我们遇见了<a href="https://svip-k1sports.com">K1体育</a>所承载的那种平衡感：不强求极限，却始终在边界上温柔试探。
+    </p>
+
+    <div class="pull-quote">
+      “身体知道答案”——但前提是，我们愿意静下来，听它说话。
+    </div>
+
+    <p>
+      日常的训练中，有人追求速度的突破，有人享受耐力带来的沉静。还有第三种人，他们在意的是动作之间的空隙——呼吸的深浅、步幅的松紧、目光落点的远近。这些细节构成了运动最真实的质感。<a href="https://svip-k1sports.com">K1体育</a>所关注的，正是这些容易被忽略却至关重要的瞬间。
+    </p>
+
+    <div class="subtle-card">
+      <h3>一种温和的视角</h3>
+      <ul class="features">
+        <li><strong>倾听优先于征服</strong>——在每一次发力前，先感受身体当下的边界</li>
+        <li><strong>持续而非激烈</strong>——让运动成为日常里的一杯温水，而不是一场暴雨</li>
+        <li><strong>动作的仪式感</strong>——从准备到结束，每一个环节都有它存在的理由</li>
+        <li><strong>呼吸是隐藏的节拍器</strong>——调节气息，比调节速度更接近运动的核心</li>
+      </ul>
+    </div>
+
+    <p>
+      无论是清晨的拉伸，傍晚的慢跑，还是球场上的一次配合，运动最终回到一件事：与自己的节奏和解。我们不需要成为专业选手，也不需要设定宏大的目标。只需要在每一次迈步或挥臂时，记住那个让自己感到舒展的瞬间。
+    </p>
+
+    <div class="faq-mini">
+      <dl>
+        <dt>运动中的“节奏”具体指什么？</dt>
+        <dd>它不是速度，而是动作与休息、用力与放松之间的交替。好的节奏让人忘记疲惫。</dd>
+        <dt>如何判断自己找对了节奏？</dt>
+        <dd>当你不再数还剩几组、还剩几公里，而是专注于当下的每一次动作时，大概就对了。</dd>
+        <dt>一定要坚持高强度训练吗？</dt>
+        <dd>不一定。持续比强度更重要。温和地坚持，往往比猛烈地开始走得更远。</dd>
+      </dl>
+    </div>
+
+    <div class="closing">
+      <p>
+        运动的方式有很多种，但适合你的那种，往往最安静。愿你在每一次舒展中，找到属于自己的频率。如果你愿意，<a href="https://svip-k1sports.com">K1体育</a>在这里，陪你一起留意那些细微而真实的感受。
+      </p>
+      <p style="margin-top:0.6rem; color:#7a6f60;">
+        <strong>· 节奏 ·</strong> 不在于快慢，而在于是否属于自己。
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
