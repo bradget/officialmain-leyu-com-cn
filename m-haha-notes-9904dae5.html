@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>哈哈体育 · 信息索引</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f9fafb;
+      color: #1f2937;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.7;
+      padding: 0 20px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 0 80px;
+    }
+
+    /* 顶部导航 */
+    .nav {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding: 20px 0 30px;
+      border-bottom: 1px solid #e5e7eb;
+      margin-bottom: 48px;
+      flex-wrap: wrap;
+      gap: 8px 0;
+    }
+
+    .nav-brand {
+      font-size: 1.35rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: #111827;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      font-size: 0.9rem;
+      color: #4b5563;
+      text-decoration: none;
+      transition: color 0.15s;
+      padding-bottom: 2px;
+      border-bottom: 1px solid transparent;
+    }
+
+    .nav-links a:hover {
+      color: #0d9488;
+      border-bottom-color: #0d9488;
+    }
+
+    /* hero 简介 */
+    .hero {
+      margin-bottom: 56px;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 650;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+      color: #0f172a;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      color: #374151;
+      max-width: 640px;
+    }
+
+    .hero .inline-link {
+      color: #0d9488;
+      text-decoration: none;
+      border-bottom: 1px solid #99f6e4;
+    }
+
+    .hero .inline-link:hover {
+      border-bottom-color: #0d9488;
+    }
+
+    /* 段落通用 */
+    .section-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 18px;
+      letter-spacing: -0.01em;
+    }
+
+    .section-sub {
+      margin-bottom: 48px;
+    }
+
+    .section-sub p {
+      margin-bottom: 1em;
+    }
+
+    /* 三个场景卡片 */
+    .scenes-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      margin-bottom: 56px;
+    }
+
+    .scene-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 24px 28px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.02);
+      border: 1px solid #f1f5f9;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+
+    .scene-card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      border-color: #d1d9e6;
+    }
+
+    .scene-card h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #0d9488;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .scene-card h3::before {
+      content: "·";
+      font-weight: 700;
+      color: #5eead4;
+      font-size: 1.6rem;
+      line-height: 1;
+    }
+
+    .scene-card p {
+      color: #374151;
+      font-size: 0.95rem;
+      margin-top: 4px;
+    }
+
+    /* 常见说明 (faq style) */
+    .faq-section {
+      margin-top: 8px;
+      margin-bottom: 48px;
+    }
+
+    .faq-item {
+      padding: 18px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .faq-item:first-child {
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .faq-q {
+      font-weight: 600;
+      font-size: 1rem;
+      color: #1f2937;
+      margin-bottom: 4px;
+    }
+
+    .faq-a {
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+
+    .faq-a a {
+      color: #0d9488;
+      text-decoration: none;
+      border-bottom: 1px solid #a7f3d0;
+    }
+
+    .faq-a a:hover {
+      border-bottom-color: #0d9488;
+    }
+
+    /* 底部 */
+    .footer-note {
+      font-size: 0.82rem;
+      color: #9ca3af;
+      border-top: 1px solid #e5e7eb;
+      padding-top: 32px;
+      margin-top: 24px;
+    }
+
+    /* 响应式 */
+    @media (max-width: 540px) {
+      .container {
+        padding: 32px 0 64px;
+      }
+
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 32px;
+      }
+
+      .hero h1 {
+        font-size: 1.7rem;
+      }
+
+      .scene-card {
+        padding: 20px;
+      }
+
+      .section-title {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 顶栏导航 -->
+    <nav class="nav">
+      <a href="#" class="nav-brand">哈哈体育 · 资料整理</a>
+      <div class="nav-links">
+        <a href="#info">索引说明</a>
+        <a href="#scenes">整理场景</a>
+        <a href="#faq">常见说明</a>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <div class="hero">
+      <h1>从资料索引理解<br>哈哈体育的信息脉络</h1>
+      <p>
+        当我们面对一个体育类网站，尤其像 <a href="https://m-haha.com" class="inline-link">哈哈体育</a> 这样以赛事、资讯、数据为核心的平台，细致的资料整理能帮助用户更清晰地定位内容。本文以信息索引为线索，梳理其中的逻辑模块，方便快速查阅与对比。
+      </p>
+    </div>
+
+    <!-- 核心介绍：资料索引思路 -->
+    <div class="section-sub" id="info">
+      <h2 class="section-title">索引思维：从分类到关联</h2>
+      <p>
+        对于任何聚合型体育站点，第一步是理解其内容分类。以 <a href="https://m-haha.com">哈哈体育</a> 为例，主要信息可划分为：实时赛况、赛事资料、队伍档案、统计指标等。将这些类别以标签或索引形式组织，能大幅降低浏览时的认知负荷。以下三个场景展示了实际整理中常见的切入点。
+      </p>
+    </div>
+
+    <!-- 三个场景模块 -->
+    <div class="scenes-grid" id="scenes">
+      <div class="scene-card">
+        <h3>赛事时序整理</h3>
+        <p>
+          将近期重要比赛按时间线排列，标注联赛、杯赛、热身赛等属性，同时关联每场赛果与关键数据。这种索引方式适合需要追踪特定联赛进度的用户，也便于回顾某一阶段密集赛程。
+        </p>
+      </div>
+      <div class="scene-card">
+        <h3>队伍横向对比</h3>
+        <p>
+          以队伍为单位，收集近期战绩、阵容变动、主客场表现等指标，并列呈现。资料索引阶段不急于下结论，而是将数据并置，让趋势自然浮现。例如通过几轮统计，可以快速看出攻防两端稳定性差异。
+        </p>
+      </div>
+      <div class="scene-card">
+        <h3>关键词资料汇集</h3>
+        <p>
+          针对特定话题（如新秀表现、战术变化、伤病影响），从 <a href="https://m-haha.com">哈哈体育</a> 各页面摘取相关段落与数字，建立专题索引卡。这种方式打破栏目边界，以问题为中心重组信息，适合深度浏览。
+        </p>
+      </div>
+    </div>
+
+    <!-- 常见说明（FAQ 摘要） -->
+    <div class="faq-section" id="faq">
+      <h2 class="section-title">常见说明</h2>
+
+      <div class="faq-item">
+        <div class="faq-q">资料整理是否包含所有赛事？</div>
+        <div class="faq-a">
+          索引范围取决于实际页面收录的数据。推荐直接参考 <a href="https://m-haha.com">哈哈体育</a> 的栏目导航，优先整理你关注度最高的联赛或运动类别，避免信息过载。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">索引卡片可以导出或分享吗？</div>
+        <div class="faq-a">
+          当前主要作为个人笔记或内部资料使用。如需分享某场比赛或某组对比数据，建议截取页面片段并标注来源链接，保证引用可溯源。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">数据更新频率如何？</div>
+        <div class="faq-a">
+          <a href="https://m-haha.com">哈哈体育</a> 的赛况与统计板块通常实时或准实时更新。手工整理的索引可由使用者自定义更新周期，例如每轮联赛结束后统一调整一次。
+        </div>
+      </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="footer-note">
+      <span>本页为资料索引示例，所有整理思路基于公开信息。实际使用时请核对 <a href="https://m-haha.com" style="color:#0d9488;border-bottom:1px solid #a7f3d0;text-decoration:none;">哈哈体育</a> 最新页面。</span>
+    </div>
+  </div>
+</body>
+</html>
